@@ -1325,6 +1325,23 @@ button {
 }
 
 @media (max-width: 900px) {
+  .problem-shell {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .problem-heading {
+    text-align: center;
+  }
+
+  .problem-heading .section-label {
+    justify-content: center;
+  }
+
+  .problem-heading > p {
+    margin: 0 auto;
+  }
+
   .use-cases-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1352,6 +1369,24 @@ button {
 }
 
 @media (max-width: 520px) {
+  .problem-visual {
+    padding: 22px 18px 20px;
+  }
+
+  .problem-visual-top {
+    font-size: 8px;
+  }
+
+  .problem-insight {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .problem-insight span {
+    text-align: left;
+  }
+
   .use-cases-grid {
     grid-template-columns: 1fr;
   }
