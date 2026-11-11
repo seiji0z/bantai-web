@@ -495,6 +495,20 @@ button {
   .trust-strip-group[aria-hidden="true"] {
     display: none;
   }
+
+  .partnership-viewport {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .partnership-track {
+    animation: none;
+  }
+
+  .partnership-logo-group[aria-hidden="true"] {
+    display: none;
+  }
 }
 
 .section-shell {
@@ -738,6 +752,82 @@ button {
   color: #64748b;
   font-size: 12px;
   line-height: 1.7;
+}
+
+.partnership-section {
+  min-height: 360px;
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(14, 116, 144, 0.1), transparent 58%),
+    #080e19;
+}
+
+.partnership-shell {
+  width: min(100%, 1120px);
+  text-align: center;
+}
+
+.partnership-shell h2 {
+  margin-bottom: 20px;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.partnership-intro {
+  max-width: 720px;
+  margin: 0 auto 44px;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.partnership-viewport {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
+  mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+}
+
+.partnership-track {
+  display: flex;
+  width: max-content;
+  animation: trust-strip-scroll 32s linear infinite;
+}
+
+.partnership-viewport:hover .partnership-track {
+  animation-play-state: paused;
+}
+
+.partnership-logo-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 80px;
+  margin: 0;
+  padding: 0 80px 0 0;
+  list-style: none;
+}
+
+.partnership-logo-item {
+  display: grid;
+  width: 210px;
+  height: 160px;
+  flex: 0 0 auto;
+  place-items: center;
+  overflow: visible;
+}
+
+.partnership-logo-item img {
+  display: block;
+  width: 145%;
+  height: 145%;
+  object-fit: contain;
 }
 
 .faq-section {
@@ -1272,6 +1362,25 @@ button {
 
   .roadmap-grid {
     grid-template-columns: 1fr;
+  }
+
+  .partnership-shell h2 {
+    margin-bottom: 16px;
+  }
+
+  .partnership-intro {
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+
+  .partnership-logo-group {
+    gap: 52px;
+    padding-right: 52px;
+  }
+
+  .partnership-logo-item {
+    width: 170px;
+    height: 130px;
   }
 
   .roadmap-target {
