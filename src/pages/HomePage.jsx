@@ -5,12 +5,9 @@ import HeroSection from "../sections/HeroSection";
 import TrustStripSection from "../sections/TrustStripSection";
 import ProblemSection from "../sections/ProblemSection";
 import SolutionSection from "../sections/SolutionSection";
-import UseCasesSection from "../sections/UseCasesSection";
 import HowItWorksSection from "../sections/HowItWorksSection";
-import PrivacySection from "../sections/PrivacySection";
 import PartnershipSection from "../sections/PartnershipSection";
 import RoadmapSection from "../sections/RoadmapSection";
-import MetricsSection from "../sections/MetricsSection";
 import TeamSection from "../sections/TeamSection";
 import FaqSection from "../sections/FaqSection";
 import FinalCtaSection from "../sections/FinalCtaSection";
@@ -42,15 +39,12 @@ function HomePage() {
         <TrustStripSection />
         <ProblemSection />
         <SolutionSection />
-        <UseCasesSection />
         <HowItWorksSection />
-        <PrivacySection />
         <PartnershipSection />
         <RoadmapSection />
-        <MetricsSection />
         <TeamSection />
-        <FaqSection />
         <FinalCtaSection />
+        <FaqSection />
       </main>
       <Footer />
     </>
