@@ -361,6 +361,111 @@ button {
   line-height: 1.7;
 }
 
+.solution-section {
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(14, 116, 144, 0.12), transparent 58%),
+    #080e19;
+}
+
+.solution-shell {
+  width: min(100%, 1120px);
+  text-align: center;
+}
+
+.solution-shell h2 {
+  margin-bottom: 20px;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.solution-intro {
+  max-width: 680px;
+  margin: 0 auto 52px;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.solution-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.solution-flow-step {
+  position: relative;
+  min-height: 250px;
+  padding: 24px 22px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 9px;
+  background: linear-gradient(145deg, rgba(15, 31, 49, 0.94), rgba(8, 14, 25, 0.9));
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.solution-flow-step:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.62);
+}
+
+.solution-step-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.solution-step-index {
+  color: #38bdf8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.solution-step-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.08);
+  color: #38bdf8;
+}
+
+.solution-flow-step h3 {
+  margin-bottom: 10px;
+  color: #f8fafc;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.solution-flow-step p {
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.solution-flow-arrow {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  z-index: 1;
+  transform: translateY(-50%);
+  color: #38bdf8;
+}
+
+.solution-note {
+  margin-top: 30px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 .roadmap-section {
   background:
     radial-gradient(circle at 50% 20%, rgba(14, 116, 144, 0.18), transparent 40%),
@@ -635,6 +740,29 @@ button {
     align-items: flex-start;
     flex-direction: column;
     padding: 32px 7%;
+  }
+}
+
+@media (max-width: 900px) {
+  .solution-flow {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .solution-flow-step {
+    min-height: auto;
+  }
+
+  .solution-step-heading {
+    margin-bottom: 18px;
+  }
+
+  .solution-flow-arrow {
+    top: auto;
+    right: 50%;
+    bottom: -20px;
+    transform: translate(50%, 0) rotate(90deg);
   }
 }
 
