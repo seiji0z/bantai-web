@@ -242,6 +242,180 @@ button {
   background: #080e19;
 }
 
+.problem-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(105deg, rgba(8, 14, 25, 0.96) 35%, rgba(11, 34, 51, 0.75)),
+    #080e19;
+}
+
+.problem-section::after {
+  position: absolute;
+  right: -180px;
+  bottom: -240px;
+  width: 540px;
+  height: 540px;
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  border-radius: 50%;
+  box-shadow: 0 0 0 70px rgba(56, 189, 248, 0.025), 0 0 0 140px rgba(56, 189, 248, 0.018);
+  content: "";
+  pointer-events: none;
+}
+
+.problem-shell {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(100%, 1120px);
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: clamp(50px, 9vw, 130px);
+  align-items: center;
+}
+
+.problem-heading {
+  text-align: left;
+}
+
+.problem-heading .section-label {
+  justify-content: flex-start;
+}
+
+.problem-heading h2 {
+  margin-bottom: 26px;
+  color: #f8fafc;
+  font-size: clamp(2.8rem, 5vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.07em;
+}
+
+.problem-heading h2 span {
+  color: #38bdf8;
+}
+
+.problem-heading > p {
+  max-width: 430px;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.problem-visual {
+  position: relative;
+  padding: 28px 30px 26px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(20, 52, 75, 0.72), rgba(8, 14, 25, 0.92)),
+    repeating-linear-gradient(0deg, transparent 0 49px, rgba(148, 163, 184, 0.06) 50px),
+    repeating-linear-gradient(90deg, transparent 0 49px, rgba(148, 163, 184, 0.06) 50px);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
+}
+
+.problem-visual-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+  color: #64748b;
+  font-size: 10px;
+  letter-spacing: 1.6px;
+}
+
+.problem-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.problem-status > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 0 5px rgba(56, 189, 248, 0.12);
+}
+
+.problem-time {
+  color: #38bdf8;
+}
+
+.problem-signal {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 92px;
+}
+
+.problem-signal-line {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.5));
+}
+
+.problem-signal-line:last-child {
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.5), transparent);
+}
+
+.problem-signal-dot {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #080e19;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 0 7px rgba(56, 189, 248, 0.14), 0 0 28px rgba(56, 189, 248, 0.7);
+}
+
+.problem-insight {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.problem-insight strong {
+  color: #f8fafc;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.problem-insight span {
+  color: #64748b;
+  font-size: 11px;
+  text-align: right;
+}
+
+.problem-points {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.problem-points li {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.problem-points li > span {
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.problem-points p {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .trust-strip-viewport {
   width: 100%;
   overflow: hidden;
